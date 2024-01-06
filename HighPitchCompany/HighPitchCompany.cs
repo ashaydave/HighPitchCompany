@@ -16,7 +16,7 @@ namespace HighPitchCompany
     {
         private const string modGUID = "Ashay.HighPitchCompany";
         private const string modName = "High Pitch Company";
-        private const string modVersion = "1.0.0";
+        private const string modVersion = "1.0.1";
 
         private readonly Harmony harmony = new Harmony(modGUID);
 
