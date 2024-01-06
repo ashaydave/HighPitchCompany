@@ -25,7 +25,7 @@ namespace HighPitchCompany.Patches
     {
         [HarmonyPatch("Start")]
         [HarmonyPostfix]
-        static void highPitchPatch(PlayerControllerB playerControllerB, ref float[] ___playerVoicePitchTargets, ref float[] ___playerVoicePitches)
+        static void highPitchPatch(ref float[] ___playerVoicePitchTargets, ref float[] ___playerVoicePitches)
         {
             ___playerVoicePitches = new float[4] { 3f, 3f, 3f, 3f };
             ___playerVoicePitchTargets = new float[4] { 3f, 3f, 3f, 3f };
